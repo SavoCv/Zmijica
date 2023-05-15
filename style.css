@@ -1,0 +1,86 @@
+#settings{
+    border: 4px;
+    border-color: black;
+}
+
+.dropdown{
+    padding-top: 10px;
+}
+
+.separated{
+    padding: 10px;
+}
+
+body{
+    color: white;
+    background-color: #263445;
+}
+
+.container{
+    background-color: #263445;
+}
+
+.evenField{
+    background-color: #263445;
+}
+
+.oddField{
+    background-color:#1e2836;
+}   
+
+.field{
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+}
+
+.snakeField{
+    background-color: #2f8cd3;
+}
+
+.food{
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+}
+
+.superFood{
+    background-color: red;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+}
+
+table{
+    border: 10px;
+    border-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, tr{
+    border: 0;
+    padding: 0;
+}
+
+#gameTable{
+    text-align: center;
+}
+
+#divResults{
+    color: #0d6efd;
+}
+
+.resTable{
+    color: #0d6efd;
+}
+
+#pDesc{
+    text-align: justify;
+}
+
+select{
+    background-color: #1e2836;
+    color: white;
+}

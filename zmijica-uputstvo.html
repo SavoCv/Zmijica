@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.4.js"></script>
+    <link href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Uputstvo</title>
+</head>
+<body onload="init()">
+    <!-- <button onclick="test()">Test</button> -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>Zmijica</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" id="manual">
+                <h2 class="text-center">Korisničko uputstvo</h2>
+                <p id="pDesc">U igri „Zmijica“ igrač koristi tastere sa strelicama da pomera zmiju po tabli sa poljima. Kako zmija
+                    dolazi u dodir sa hranom, ona je jede i time raste za jedan članak. Igra se završava kada se zmija
+                    sudari sa ivicama ekrana ili sa sobom. Cilj igre je da zmija postane što veća pre nego što se to
+                    dogodi. Stranica sa igrom prikazuje tablu polja po kojoj se kreće zmija i na kojoj se nalaze komadi hrane. U
+                    svakom trenutku na tabli se nalazi jedan komad hrane. Kada zmija pojede hranu, korisnik ostvaruje
+                    poen, a na nasumičnoj lokaciji na tabli se generiše nov komad hrane. Na svakih deset sekundi, na
+                    tabli se na nasumičnoj lokaciji pojavljuje „super hrana“ koja ostaje na tabli nekoliko sekundi pre
+                    nego što nestane sa table. Ukoliko zmija stigne da pojede „super hranu“, korisnik ostvaruje deset
+                    poena.
+                </p>
+            </div>
+            <div class="col-sm-6 text-center" id="settings">
+                <br>
+                <label for="table_size">Izaberite veličinu tabele</label>
+                <select id="table_size" name="table_size">
+                    <option value="4_4">4x4</option>
+                    <option value="8_8">8x8</option>
+                    <option value="16_16">16x16</option>
+                    <option value="32_32">32x32</option>
+                </select>
+                <br><br>
+                <label for="tezina">Izaberite težinu</label>
+                <select id="tezina" name="tezina">
+                    <option value="1">Lako</option>
+                    <option value="2">Srednje</option>
+                    <option value="3">Tesko</option>
+                </select>
+                <br><br>
+                <button onclick="startGame()" class="btn btn-primary">Pokreni igru</button>
+                <br><br>
+                <button onclick="viewResults()" id="btnResults" class="btn btn-outline-primary">Vidi najbolje rezultate</button>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
