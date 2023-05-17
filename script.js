@@ -16,26 +16,33 @@ var results;
 
 function init()
 {
-    if(!readNML())
+    if(!readNMLAux())
         return;
     $('#table_size option[value="' + n + '_' + m + '"]').prop('selected', true);
     $('#tezina option[value="' + level + '"]').prop('selected', true);
 }
 
-function readNML()
+function readNMLAux()
 {
     sl = localStorage.getItem("level");
     sn = localStorage.getItem("n");
     sm = localStorage.getItem("m");
     if(sl == null || sn == null || sm == null){
-        alert("Nisu podeseni level i dimenzije");
-        window.close();
         return false;
     }
     level = parseInt(sl);
     n = parseInt(sn);
     m = parseInt(sm);
     return true;
+}
+
+function readNML()
+{
+    if(readNMLAux())
+        return true;
+    alert("Nisu podeseni level i dimenzije");
+    window.close();
+    return false;
 }
 
 function fillTable()
